@@ -72,7 +72,7 @@
     3.  type ```127.0.1.1<\t>artix-rice-mkr.localdomain<\t>artix-rice-mkr``` # for host name
 17. $ passwd
     1.  enter password for root
-18. $ pacman -S grub efibootmgr networkmanager networkmanger-runit network-manager-applet dosfstools linux-headers bluez bluez-runit bluez-utils cups cups-runit xdg-utils xdg-user-dirs dhcp dhcp-runit
+18. $ pacman -S grub efibootmgr networkmanager networkmanger-runit network-manager-applet dosfstools linux-headers bluez bluez-runit bluez-utils cups cups-runit xdg-utils xdg-user-dirs dhcp dhcp-runit dbus dbus-runit
     1.  just press enter to accept the defaults if you don't care
 
 # Grub bootloader Setup
@@ -91,3 +91,17 @@
 8. $ reboot
 9. On my system I had to add a new boot give it the name GRUB and select the /boot/efi folder
 
+# Setup Runit System Softlinks
+1. Login with creds
+2. $ sudo su
+3. $ ln -s /etc/runit/sv/NetworkManager /run/runit/service
+4. $ ip a
+5. for wifi $ nmtui 
+   1. activate a connection
+   2. select yours and enter password
+   3. press esc
+   4. $ ip a should now show an ip
+6. $ ln -s /etc/runit/sv/bluetoothd /run/runit/service
+7. $ ln -s /etc/runit/sv/cupsd /run/runit/service
+8. $ ln -s /etc/runit/sv/dhcpd4 /run/runit/service
+9. $ ln -s /etc/runit/sv/dhcpd6 /run/runit/service
