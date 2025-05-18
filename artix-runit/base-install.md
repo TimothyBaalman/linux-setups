@@ -105,3 +105,4 @@
 7. $ ln -s /etc/runit/sv/cupsd /run/runit/service
 8. $ ln -s /etc/runit/sv/dhcpd4 /run/runit/service
 9. $ ln -s /etc/runit/sv/dhcpd6 /run/runit/service
+10. $ ln -s /etc/runit/sv/dhclient /run/runit/service
