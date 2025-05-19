@@ -43,7 +43,7 @@
 15. $ lsblk # should show the dirs on the drives now
 
 # Base System Install
-1. $ basestrap /mnt base base-devel runit elogind-runit linux linux-firmware vim intel-ucode linux-firmware-qlogic 
+1. $ basestrap /mnt base base-devel runit elogind-runit linux linux-firmware vim intel-ucode 
 2. $ fstabgen -U /mnt >> /mnt/etc/fstab
 3. $ cat /mnt/etc/fstab # should see two partitions here
 4. $ artix-chroot /mnt # formally artools-chroot
