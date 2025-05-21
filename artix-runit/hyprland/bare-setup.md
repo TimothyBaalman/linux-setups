@@ -26,5 +26,18 @@
 5. $ yay -S hyprlock hyprpaper hyprpicker hyprsunset
    1. only install the package that we have here
    2. if asked about dependency conflict press y to remove dependency
+6. add ```exec-once = hyprpaper``` into ~/.config/hypr/hyprland.conf
+7. add ```exec-once = hyprsunset -d eDP-1 -t 4500``` into ~/.config/hypr/hyprland.conf
+   1. Might make a bash script for all monitors
+   ```sh
+   #!/bin/bash
+   for monitor in $(hyprctl monitors | grep 'Monitor' | awk '{print $2}'); do
+      hyprsunset -d "$monitor" -t 4500 &
+   done
+   ```
+   2. Save in ~/bin/hyprsunset-all
+   3. $ chmod +x ~/bin/hyprsunset-all
+   4. add ```exec-once = ~/bin/hyprsunset-all``` into ~/.config/hypr/hyprland.conf
+   
 
 https://github.com/kurealnum/dotfiles/blob/main/.config/scripts/sysmaintenance.sh
