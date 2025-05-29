@@ -72,6 +72,7 @@
    
 
 # End Goal 
-* [Setup a Nice Environment Like end-4](https://github.com/end-4/dots-hyprland/tree/main)
+* Setup a Nice Environment Like [end-4](https://github.com/end-4/dots-hyprland/tree/main) baked in with the taskbar like [HyDE](https://github.com/HyDE-Project/HyDE)
+* https://wiki.hyprland.org/Getting-Started/Preconfigured-setups/
 
 https://github.com/kurealnum/dotfiles/blob/main/.config/scripts/sysmaintenance.sh
