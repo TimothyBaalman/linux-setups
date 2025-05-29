@@ -27,8 +27,8 @@
    3. ```xdg-desktop-portal-hyprland``` # lets other applications communicate with the compositor through D-Bus
    4. ```qt5-wayland qt6-wayland``` # Qt Wayland Support
    5. ```waybar``` # Status bar
-   6. ```wofi``` # App launcher
-   7. ```dolphin``` # File Manager
+   6. ```wofi``` # App launcher [docs](https://cloudninja.pw/docs/wofi.html)
+   7. ```dolphin``` # File Manager [docs](https://github.com/KDE/dolphin)
    8. ```hyprcursor``` # is a new cursor theme format
    9. ```hypridle``` # idle management daemon
    10. ```hyprlang``` # library that implements parsing for the hypr configuration language
@@ -54,7 +54,7 @@
    2. ```hyprpaper``` # wallpaper utility
    3. ```hyprpicker``` # utility for picking a color
    4. ```hyprsunset``` # blue light filter
-   5. ```cliphist``` # Clipboard Manager
+   5. ```cliphist``` # Clipboard Manager [docs](https://github.com/sentriz/cliphist)
    6. only install the package that we have here
    7. if asked about dependency conflict press y to remove dependency
 10. add ```exec-once = hyprpaper``` into ~/.config/hypr/hyprland.conf
@@ -70,5 +70,8 @@
     3. $ chmod +x ~/bin/hyprsunset-all
     4. add ```exec-once = ~/bin/hyprsunset-all``` into ~/.config/hypr/hyprland.conf
    
+
+# End Goal 
+* [Setup a Nice Environment Like end-4](https://github.com/end-4/dots-hyprland/tree/main)
 
 https://github.com/kurealnum/dotfiles/blob/main/.config/scripts/sysmaintenance.sh
