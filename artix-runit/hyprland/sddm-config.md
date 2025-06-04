@@ -19,5 +19,6 @@
 5. edit the /usr/share/sddm/themes/Sugar-Candy/theme.conf file for customizing config. I changed from the default
    1. FormPosition="center"
    2. PartialBlur="false"
-   3. HourFormat="HH:mm:ss"   4. 
+   3. HourFormat="HH:mm:ss"
+   4. DateFormat="MMMM d, dddd"
 6. Test with $ sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-candy
