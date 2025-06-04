@@ -17,6 +17,13 @@
 7. $ ln -s /etc/runit/sv/sddm /run/runit/service
    1. Your sddm will start automatically after this
    2. to get into tty press alt+(one of the function keys mine was F4)F1-6
+8. $ vim ~/.config/hypr/hyprland.conf
+   1. Modify the following to stop auto scaling to a large amount causing pixelaztion 
+   ```sh
+      monitor=,preferred,auto,1 # 1.2 would be 120%
+   ```
+   2. :wq
+9. sudo reboot
 
 # Hyprland Installs
 1. [Check out Useful Utilities](https://wiki.hyprland.org/Useful-Utilities/)
@@ -53,13 +60,14 @@
 7. $ sudo usermod -aG input \<username>
 8. $ sudo reboot
 9.  $ yay -S 
-   1. ```hyprlock``` # screen lock for Hyprland
-   2. ```hyprpaper``` # wallpaper utility
-   3. ```hyprpicker``` # utility for picking a color
-   4. ```hyprsunset``` # blue light filter
-   5. ```cliphist``` # Clipboard Manager [docs](https://github.com/sentriz/cliphist)
-   6. only install the package that we have here
-   7. if asked about dependency conflict press y to remove dependency
+    1. ```hyprlock``` # screen lock for Hyprland
+    2. ```hyprpaper``` # wallpaper utility
+    3. ```hyprpicker``` # utility for picking a color
+    4. ```hyprsunset``` # blue light filter
+    5. ```cliphist``` # Clipboard Manager [docs](https://github.com/sentriz/cliphist)
+    6. only install the package that we have here
+    7. if asked about dependency conflict press y to remove dependency
+ 10. $ yay -Sy brave-bin
 10. add ```exec-once = hyprpaper``` into ~/.config/hypr/hyprland.conf
 11. add ```exec-once = hyprsunset -d eDP-1 -t 4500``` into ~/.config/hypr/hyprland.conf
     1. Might make a bash script for all monitors
