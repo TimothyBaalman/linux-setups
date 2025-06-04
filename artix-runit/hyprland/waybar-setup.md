@@ -3,5 +3,5 @@ https://github.com/Alexays/Waybar/wiki/Module:-Hyprland
 * [ ] Fix failed to Query power-profiles-daemon via dbus: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name net.hadess.PowerProfiles was not provided by any .service files
 * [ ] Pressing power button leads to Seg Fault might be related to first issue
 * [ ] Make Custom icons for workspaces
-* [ ] Figure out a color theme
+* [ ] Figure out a color theme pywal (pywall-16-colors) for getting color theme based on background image.
 * [ ] 

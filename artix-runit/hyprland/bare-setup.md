@@ -37,6 +37,9 @@
    13. ```hyprgraphics``` # library providing shared implementations of some utilities relating to graphics and resources
    14. ```grim``` # Screenshot utility for Wayland
    15. ```wf-recorder``` # Screen recorder
+   16. ```ttf-font-awesome``` # Fonts
+   17. ```ttf-nerd-fonts-symbols``` # Fonts
+   18. ```ttf-jetbrains-mono-nerd``` # Fonts
 3. add ```exec-once = waybar``` into ~/.config/hypr/hyprland.conf
 4. $ git clone https://aur.archlinux.org/yay.git
    1. $ cd yay
