@@ -20,5 +20,5 @@
    1. FormPosition="center"
    2. PartialBlur="false"
    3. HourFormat="HH:mm:ss"
-   4. DateFormat="MMMM d, dddd"
+   4. DateFormat="dddd, MMMM d yyyy" [date format](https://doc.qt.io/archives/qt-5.15/qml-qtqml-date.html)
 6. Test with $ sddm-greeter --test-mode --theme /usr/share/sddm/themes/sugar-candy
