@@ -34,7 +34,7 @@
    3. ```xdg-desktop-portal-hyprland``` # lets other applications communicate with the compositor through D-Bus
    4. ```qt5-wayland qt6-wayland``` # Qt Wayland Support
    5. ```waybar``` # Status bar
-   6. ```wofi``` # App launcher [docs](https://cloudninja.pw/docs/wofi.html)
+   6. ```rofi``` [docs](https://github.com/lbonn/rofi/blob/wayland/CONFIG.md) or ```wofi``` # App launcher [docs](https://cloudninja.pw/docs/wofi.html)
    7. ```dolphin``` # File Manager [docs](https://github.com/KDE/dolphin)
    8. ```hyprcursor``` # is a new cursor theme format
    9. ```hypridle``` # idle management daemon
